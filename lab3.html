@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Моя форма</title>
+</head>
+<body>
+    <center>
+	<h2>Pizza shop</h2>
+	<table border="1">
+		<tr>
+			<td><label for="name">Ім'я:</label></td>
+			<td><input type="text" id="name" name="name"></td>
+		</tr>
+        <tr>
+			<td><label for="topping">Начинка для піци:</label></td>
+			<td><label>
+                <div class="circle">
+                    <input type="radio" name="topping" value="supreme">Основна
+                </div>
+            </label>
+            <label>
+                <div class="circle">
+                    <input type="radio" name="topping" value="vegetarian">Вегетаріанська
+                </div>
+            </label>
+            <label>
+                <div class="circle">
+                    <input type="radio" name="topping" value="hawaiian">Гавайська
+                </div>
+            </label></td>
+		</tr>
+		<tr>
+			<td><label for="sauce">Соус для піци:</label></td>
+			<td><select id="sauce" name="sauce">
+                <option value="tomato">Томатний</option>
+                <option value="white">Білий</option>
+              </select></td>
+		</tr>
+		<tr>
+			<td><label for="extras">Додаткові опції:</label></td>
+			<td><label>
+                <div class="square">
+                <input type="checkbox" name="extra" value="cheese">Подвійний сир
+                </div>
+            </label>
+            <label>
+                <div class="square">
+                <input type="checkbox" name="extra" value="noGluten">Безглютенова основа
+                </div>
+            </label></td>
+		</tr>
+		<tr>
+			<td colspan="2"><label for="message">Інструкції з доставки:</label><br>
+			<textarea id="message" name="message" rows="5" cols="50"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="Надіслати">
+			</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>
